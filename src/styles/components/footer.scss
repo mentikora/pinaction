@@ -1,0 +1,29 @@
+#footer{
+  display: flex;
+  justify-content: center;
+}
+
+.footer{
+  &__links{
+    
+    a{
+      display: inline-block;
+      margin: {
+        left: 8px;
+        right: 8px;
+      }
+      
+      text: {
+        transform: uppercase;
+        align: center;
+        decoration: none;
+      }
+      color: $color-white;
+      transition: $transition;
+
+      &:hover{
+        color: $color-orange;
+      }
+    }
+  }
+}

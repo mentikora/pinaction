@@ -1,0 +1,81 @@
+#header{
+  display: flex;
+  justify-content: space-between;
+
+  color: $color-white;
+}
+
+.header{
+  
+  &__left{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+  }
+
+  &__session{
+    padding: {
+      left: 15px;
+      right: 15px;
+    }
+    a{
+      display: inline-block;
+      margin: {
+        left: 5px;
+        right: 5px;
+      }
+      text: {
+        decoration: none;
+        transform: uppercase;
+      }
+      color: rgba($color-black, .7);
+      position: relative;
+      transition: $transition;
+
+      &::after{
+        content: '';
+        width: 100%;
+        height: 1px;
+
+        position: absolute;
+        z-index: 2;
+        bottom: -2px;
+        left: 0;
+        background: {
+          color: rgba($color-black, .7);
+        }
+
+        transition: all .5s ease;
+        
+      }
+
+      &:hover{
+        color: $color-orange;
+        &::after{
+          background-color: $color-orange;
+          width: 0;
+        }
+      }
+
+    }
+  }
+
+  &__user{
+    display: flex;
+    align-items: center;
+
+    &__avatar{
+      margin-left: 10px;
+      i{
+        font-size: 40px;
+      }
+    }
+    &__name{
+    }
+  }
+}

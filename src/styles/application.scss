@@ -1,9 +1,13 @@
 @import "common/normalize.scss";
 @import "common/variables.scss";
-@import "common/font-family.scss";
 @import "common/grid.scss";
 @import "common/theme.scss";
-@import "common/welldo-font-icons.scss";
+@import "common/user-avatars-icon.scss";
+
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/content-wrapper.scss";
+@import "components/button.scss";
 
 @import "extends/clearfix.scss";
 

@@ -1,24 +1,20 @@
 /* Colors */
-$color-white: #ffffff; 
-$color-black: #000000;
+$color-white: #f6f6f6; 
+$color-black: #111517;
 $color-gray: #5b5b5b;
-$color-orange: #ff6000;
+$color-orange: #ffc107;
 
-/* FontFamily */ 
-$rubik: 'Rubik';
-$raleway: 'Raleway';
+$roboto: 'Roboto', sans-serif;
 
-/* Path */
-$images-path: "/images/";
+/* button */
+$button-radius: 35px;
+$button-shadow: 0 2px 2px 0 rgba($color-black, .7);
 
 /* Etc */
-$transition: all .23s ease-in-out;
-$boxShadow: 0 0 30px 0 rgba($color-black, .2);
+$transition: all .25s ease-in-out;
 
-$button-big-radius: 35px;
+
 $circle: 50%; 
 
-/* Mainpage */ 
-$service-item-height: 370px;
-$portfolio-item-height: 390px;
+$grid-tablet: 991px;
 
