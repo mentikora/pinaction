@@ -21,13 +21,15 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  @media(min-width: $screen-sm){
+    padding: {
+      left: 30px;
+      right: 30px;
+    } 
+  }
 
-  padding: {
-    left: 30px;
-    right: 30px;
-  } 
-
-  @media(max-width: $grid-tablet){
+  @media(max-width: $screen-sm-max){
     padding: {
       left: 15px;
       right: 15px;

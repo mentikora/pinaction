@@ -37,22 +37,7 @@
       position: relative;
       transition: $transition;
 
-      &::after{
-        content: '';
-        width: 100%;
-        height: 1px;
-
-        position: absolute;
-        z-index: 2;
-        bottom: -2px;
-        left: 0;
-        background: {
-          color: rgba($color-black, .7);
-        }
-
-        transition: all .5s ease;
-        
-      }
+      // after
 
       &:hover{
         color: $color-orange;

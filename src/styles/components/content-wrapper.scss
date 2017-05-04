@@ -3,5 +3,9 @@
   color: $color-black;
 
   padding: 30px;
-  width: 1400px;
+  
+	
+	@media(min-width: $screen-xl){
+		width: 1400px;	
+	}
 }
