@@ -1,0 +1,80 @@
+.chat-wrapper{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	background: {
+		color: #fcfcfe;
+	}
+	height: 100vh;
+
+	padding: 15px;
+
+	box-shadow: $shadow;
+
+	display: flex;
+	flex-direction: column;
+	
+	@media(min-width: $screen-xs){
+		width: 480px;
+	}
+	@media(max-width: $screen-xs-max){
+		width: 100%;
+	}
+
+	&__header{
+		padding-bottom: 10px;
+	}
+	&__messages-wrapper{
+
+	}
+	.chat-send-message{
+		margin: {
+			left: -15px;
+			right: -15px;
+			bottom: -15px;
+		}
+		margin-top: 15px;
+		background-color: #fff;
+		height: 100px;
+
+		form{
+			display: flex;
+			height: 100%;
+			box-shadow: $shadow;
+			textarea{
+				width: calc(100% - 50px);
+				border: 0;
+				outline: 0;
+				resize: none;
+				padding: 5px 15px;
+
+				font: {
+					size: 14px;
+					family: $roboto;
+				}
+				line-height: 18px;
+			}
+			input{
+				width: 50px;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				outline: 0;
+				cursor: pointer;
+				background: {
+					repeat: no-repeat;
+					color: #fff;
+					position: 50%;
+					image: url('/images/send.svg');
+					size: 25px;
+				}
+				transition: $transition;
+
+				&:hover{
+					background-size: 28px;
+				}
+			}
+		}
+	}
+}

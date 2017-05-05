@@ -9,6 +9,8 @@ $color-lightblue: #03a9f4;
 
 $roboto: 'Roboto', sans-serif;
 
+$shadow: 0 1px 1px rgba($color-black, .1);
+
 /* button */
 $button-radius: 35px;
 $button-shadow: 0 2px 2px 0 rgba($color-black, .7);
@@ -16,11 +18,11 @@ $button-shadow: 0 2px 2px 0 rgba($color-black, .7);
 /* Etc */
 $transition: all .25s ease-in-out;
 
+/* Radiuses */ 
+$radius-circle: 50%; 
+$chat-message-radius: 5px;
 
-$circle: 50%; 
-
-$grid-tablet: 991px;
-
+/* Mediaquery */ 
 $screen-xs: 480px;
 $screen-xs-max: $screen-xs - 1;
 

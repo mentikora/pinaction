@@ -2,6 +2,7 @@
 @import "common/variables.scss";
 @import "common/grid.scss";
 @import "common/theme.scss";
+@import "common/flaticon.scss";
 
 @import "components/header.scss";
 @import "components/footer.scss";
@@ -10,6 +11,10 @@
 @import "components/heading.scss";
 @import "components/text.scss";
 
+@import "components/chat-wrapper.scss";
+@import "components/chat-message.scss";
+
 @import "extends/clearfix.scss";
+@import "includes/nanoscroller.scss";
 
 @import "pages/mainpage.scss";

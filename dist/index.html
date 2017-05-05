@@ -9,6 +9,7 @@
 
   <!--<script type="text/javascript" src="bundle.js"></script>-->
 
+
 </head>
 <body>
   
@@ -32,6 +33,102 @@
       </div>
     </div>
   </header>
+
+  <div class="chat-wrapper">
+    <div class="chat-wrapper__header">
+      header
+    </div>
+    
+    <div class="nano">
+      <div class="nano-content">
+
+        <div class="chat-wrapper__messages-wrapper">
+
+          <div class="chat-message">
+            <img src="/images/megusta.jpg" alt="" class="chat-message__user-avatar">
+            <div class="chat-message__user-message">
+              Приходит ветеринар к терапевту: Терапевт: На что жалуетесь? Ветеринар: Нет, ну так каждый может!
+              <div class="chat-message__message-date">
+                10:20 12.12.2017
+              </div>
+            </div>
+          </div>
+          <div class="chat-message">
+            <img src="/images/megusta.jpg" alt="" class="chat-message__user-avatar">
+            <div class="chat-message__user-message">
+              Когда уже вы вымрете, писатели историй про Яжевсех
+              <div class="chat-message__message-date">
+                10:21 12.12.2017
+              </div>
+            </div>
+          </div>
+          <div class="chat-message">
+            <img src="/images/megusta.jpg" alt="" class="chat-message__user-avatar">
+            <div class="chat-message__user-message">
+              Вот читаю я все эти коменты и думаю: как же всё-таки много хороших людей на этом свете
+              <div class="chat-message__message-date">
+                10:21 12.12.2017
+              </div>
+            </div>
+          </div>
+          <div class="chat-message">
+            <img src="/images/megusta.jpg" alt="" class="chat-message__user-avatar">
+            <div class="chat-message__user-message">
+              Сала Уріні!
+              <div class="chat-message__message-date">
+                10:21 12.12.2017
+              </div>
+            </div>
+          </div>
+          <div class="chat-message">
+            <img src="/images/megusta.jpg" alt="" class="chat-message__user-avatar">
+            <div class="chat-message__user-message">
+              ну ты и скачешь по темам, изотопы углерода после порнхаба и авиасалы?
+              <div class="chat-message__message-date">
+                10:21 12.12.2017
+              </div>
+            </div>
+          </div>
+          <div class="chat-message">
+            <img src="/images/megusta.jpg" alt="" class="chat-message__user-avatar">
+            <div class="chat-message__user-message">
+              Сапоги надо чистить вечером и одевать утром на свежую голову
+              <div class="chat-message__message-date">
+                10:21 12.12.2017
+              </div>
+            </div>
+          </div>
+          <div class="chat-message">
+            <img src="/images/megusta.jpg" alt="" class="chat-message__user-avatar">
+            <div class="chat-message__user-message">
+              - Ну и че, ёпт? Работать идём? 
+              <div class="chat-message__message-date">
+                10:21 12.12.2017
+              </div>
+            </div>
+          </div>
+          <div class="chat-message">
+            <img src="/images/megusta.jpg" alt="" class="chat-message__user-avatar">
+            <div class="chat-message__user-message">
+              Ну и какого хрена на этот раз происходит?
+              <div class="chat-message__message-date">
+                10:21 12.12.2017
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="chat-send-message">
+      <form action="">
+        <textarea name="" id="" placeholder="Say something.."></textarea>
+        <input type="submit" value="">
+      </form>
+    </div>
+  </div>
 
 	<!-- wrapper -->
   <div id="wrapper">
@@ -59,7 +156,14 @@
 
   <!-- cdnjs jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/javascripts/jquery.nanoscroller.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/css/nanoscroller.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <script>
+    $('document').ready(function(){
+      $('.nano').nanoScroller({ scroll: 'bottom' });
+    });
+  </script>
 
 </body>
 </html>
