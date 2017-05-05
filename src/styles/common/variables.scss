@@ -17,6 +17,8 @@ $button-shadow: 0 2px 2px 0 rgba($color-black, .7);
 
 /* Etc */
 $transition: all .25s ease-in-out;
+$ease-out : cubic-bezier(0.25, 0.8, 0.25, 1);
+$ease-in  : cubic-bezier(0.55, 0, 0.55, 0.2);
 
 /* Radiuses */ 
 $radius-circle: 50%; 
