@@ -134,10 +134,16 @@
   </div>
 
   <!-- popup register -->
-  <div class="popup popup__register hidden">
-    <span class="popup__register-close">
+  <div class="popup popup__register">
+    <span class="popup__close">
       <i class="fi flaticon-cancel-music"></i>
     </span>
+
+    <div class="register_socials_wrapper">
+      <a href="javascript:void(0);" class="tw"><span class="fi flaticon-twitter-logo-silhouette"></span></a>
+      <a href="javascript:void(0);" class="gp"><span class="fi flaticon-google-plus-logo"></span></a>
+      <a href="javascript:void(0);" class="fb"><span class="fi flaticon-facebook-logo"></span></a>
+    </div>
   </div>
 
   <!-- popup actions done -->
@@ -162,7 +168,7 @@
         </div>
       </div>
     </div> -->
-    <div class="content-wrapper">
+    <div class="content-wrapper content-wrapper__map">
       <div class="pin animated">
         <img src="/images/megusta.jpg" alt="" class="pin__avatar">
       </div>
@@ -196,7 +202,7 @@
         document.querySelector('.chat-wrapper').classList.remove('hidden');
       }, false);
 
-      document.querySelector('.popup__register-close').addEventListener('click', function(){
+      document.querySelector('.popup__close').addEventListener('click', function(){
         this.parentNode.classList.add('hidden')
       }, false);
     });

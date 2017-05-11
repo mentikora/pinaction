@@ -21,19 +21,12 @@
     transition: $transition;
     cursor: pointer;
 
-    &:hover{
-      background: rgb(255,193,7);
-      background: -moz-linear-gradient(left, rgb(255,193,7) 0%, rgb(255,146,10) 30%, rgb(255,146,10) 70%, rgb(255,193,7) 100%);
-      background: -webkit-linear-gradient(left, rgb(255,193,7) 0%,rgb(255,146,10) 30%,rgb(255,146,10) 70%,rgb(255,193,7) 100%);
-      background: linear-gradient(to right, rgb(255,193,7) 0%,rgb(255,146,10) 30%,rgb(255,146,10) 70%,rgb(255,193,7) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc107', endColorstr='#ffc107',GradientType=1 );  
-    }
-
     i{
       margin-right: 10px;
       font-size: 30px;
     }
   }
+
   &__right{
     display: flex;
     align-items: center;
