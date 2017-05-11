@@ -7,11 +7,32 @@
 
 .header{
   
-  &__left{
+  &__logo{
     display: flex;
     align-items: center;
     font-weight: 900;
     font-size: 20px;
+
+    padding: {
+      left: 10px;
+      right: 10px;
+    }
+
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover{
+      background: rgb(255,193,7);
+      background: -moz-linear-gradient(left, rgb(255,193,7) 0%, rgb(255,146,10) 30%, rgb(255,146,10) 70%, rgb(255,193,7) 100%);
+      background: -webkit-linear-gradient(left, rgb(255,193,7) 0%,rgb(255,146,10) 30%,rgb(255,146,10) 70%,rgb(255,193,7) 100%);
+      background: linear-gradient(to right, rgb(255,193,7) 0%,rgb(255,146,10) 30%,rgb(255,146,10) 70%,rgb(255,193,7) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc107', endColorstr='#ffc107',GradientType=1 );  
+    }
+
+    i{
+      margin-right: 10px;
+      font-size: 30px;
+    }
   }
   &__right{
     display: flex;
@@ -55,13 +76,26 @@
     align-items: center;
 
     &__avatar{
-      margin-left: 10px;
-      i{
-        font-size: 40px;
-      }
+      width: 35px;
+      height: 35px;
+      border-radius: $radius-circle;
+      display: block;
+      margin-right: 10px;
+      border: 2px solid rgba($color-white, .3);
     }
+
     &__name{
       font-weight: 700;
+    }
+
+    /* settings */
+    i{
+      cursor: pointer;
+      margin-left: 5px;
+      transition: $transition;
+      &:hover{
+        color: $color-orange;
+      }
     }
   }
 }

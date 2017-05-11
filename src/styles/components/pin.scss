@@ -1,0 +1,28 @@
+.pin{
+	display: block;
+	padding: 3px;
+	position: relative;
+	background: {
+		color: $color-white;
+	}
+	width: 52px;
+	
+	border: 3px solid $color-orange;
+	border-radius: 50% 50% 50% 0;
+
+	cursor: pointer;
+
+	display: flex;
+	box-shadow: 0 0 5px 0 rgba($color-black, .7);
+
+	&__avatar{
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		display: block;
+	}
+
+	&:hover{
+		animation-name: rubberBand;
+	}
+}

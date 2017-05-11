@@ -1,8 +1,10 @@
 .content-wrapper{
-  background-color: $color-white;
-  color: $color-black;
-
   padding: 30px;
+
+  &__white{
+  	background-color: $color-white;	
+  	color: $color-black;
+  }
   
 	
 	@media(min-width: $screen-xl){

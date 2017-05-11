@@ -9,11 +9,14 @@
 	justify-content: center;
 	flex-direction: column;
 
-	@media(min-width: $screen-xs){
-		width: 480px;
+	visibility: visible;
+	opacity: 1;
+
+	@media(min-width: $screen-md){
+		width: 400px;
 	}
 
-	@media(max-width: $screen-xs-max){
+	@media(max-width: $screen-md-max){
 		width: 100%
 	}
 
@@ -27,6 +30,7 @@
 	&__actions-done{
 		bottom: 0;
 	}
+
 	.actions-done-counter{
 		color: $color-orange;
 		font: {
@@ -34,6 +38,7 @@
 			weight: 900;
 		}
 	}
+
 	.add-action-btn{
 		color: $color-white;
 		padding: 6px 12px;
@@ -50,6 +55,18 @@
 			color: $color-orange;
 			background-color: rgba($color-white, .2);
 		}
+	}
 
+	&__register-close{
+		cursor: pointer;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+
+	&.hidden{
+		visibility: hidden;
+	  opacity: 0;
+	  transition: .35s $ease-out;
 	}
 }

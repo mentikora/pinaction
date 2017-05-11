@@ -15,7 +15,8 @@
   
   <!-- header -->
   <header id="header" class="header">
-    <div class="header__left">
+    <div class="header__logo">
+      <i class="fi flaticon-placeholder"></i>
       pinaction
     </div>
     <div class="header__right">
@@ -24,12 +25,11 @@
         <a href="javascript: void(0);">Sign Up</a>
       </div>
       <div class="header__user">
+        <img src="/images/megusta.jpg" alt="" class="header__user__avatar">
         <div class="header__user__name">
           User Name
-        </div>
-        <div class="header__user__avatar">
-          <i class="flaticon-man-8"></i>
-        </div>   
+          <i class="fi flaticon-forward-arrow"></i>
+        </div> 
       </div>
     </div>
   </header>
@@ -134,7 +134,11 @@
   </div>
 
   <!-- popup register -->
-  <div class="popup popup__register">register</div>
+  <div class="popup popup__register hidden">
+    <span class="popup__register-close">
+      <i class="fi flaticon-cancel-music"></i>
+    </span>
+  </div>
 
   <!-- popup actions done -->
   <div class="popup popup__actions-done">
@@ -149,13 +153,18 @@
 	<!-- wrapper -->
   <div id="wrapper">
     
-    <div class="content-wrapper">
+    <!-- <div class="content-wrapper content-wrapper__white">
       <h1 class="heading">Heading</h1>
       <div class="text">
         Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur</a> adipisicing elit. Error eius, similique repudiandae officia consectetur odio ab nobis commodi est veniam facere culpa perferendis, aliquam minus repellat optio harum obcaecati neque!
         <div>
           lorem*50
         </div>
+      </div>
+    </div> -->
+    <div class="content-wrapper">
+      <div class="pin animated">
+        <img src="/images/megusta.jpg" alt="" class="pin__avatar">
       </div>
     </div>
 
@@ -174,17 +183,22 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="/js/nanoscroller.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
   <script>
     $('document').ready(function(){
       $('.nano').nanoScroller({ scroll: 'bottom' });
 
-      $('.chat-wrapper__close').on('click', function(){
-        $('.chat-wrapper').addClass('hidden');
-      });
+      document.querySelector('.chat-wrapper__close').addEventListener('click', function(){
+        document.querySelector('.chat-wrapper').classList.add('hidden');
+      }, false);
 
-      $('.header__user__name').on('click', function(){
-        $('.chat-wrapper').removeClass('hidden');
-      });
+      document.querySelector('.add-action-btn').addEventListener('click', function(){
+        document.querySelector('.chat-wrapper').classList.remove('hidden');
+      }, false);
+
+      document.querySelector('.popup__register-close').addEventListener('click', function(){
+        this.parentNode.classList.add('hidden')
+      }, false);
     });
   </script>
 
